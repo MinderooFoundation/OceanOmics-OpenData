@@ -62,6 +62,28 @@ We can also annotate the genome assembly to find genes in the genome. Let's use 
 
 After a few hours this will result in a gtf file detailing where gene models sit in the genome assembly. These gene models can then be extracted for further functional annotation, for example, by assigning Gene Ontology terms via [PANNZER2](http://ekhidna2.biocenter.helsinki.fi/sanspanz/) or similar tools. You can then look for your gene families of interest - for example, by searching for the GO term GO:0042288 'MHC class I protein binding' you will find genes implicated in disease resistance.
 
-# eDNA - working with environmental DNA data
+### Search for relatives
 
-Let's use our *E. armatus* assembly above and query a metagenomics run!
+We can grab a random piece of DNA and search for it in public databases.
+
+For example, here's a small region from the second pseudomolecule of *Enoplosus armatus*:
+
+<pre>
+CACACTGTTCATTATTTGAGTCATTCATATTTTAGCTATATTCTTTCTGACCGAGTCTGA
+CTGAGCTCCAAACGTACAGTGAAAGCTGAAGTTGGAATTTACCAGCTGGAGACTAGCATC
+TTTATCAGTGCCCCTCCGAGAGCTGCATGTGTCGTCACAATAAGATGTGACAGGCGACTG
+GAAAGAGATTTACACCTGGTTAATAAGCTTTCCTACTAACTAATCATGAAACTTTATCGC
+TCATCTCTGCTCCTGTGTTCAACTATTACCACGTTAACATCTTTCCAATCAGTGCTTTCA
+CTTCTCCTCCTCTCAACACCCCCTTCACTTGCTTCAGTTGTCTCTGTCCCTTCACCTGTA
+ACAGTTTTCATAAATAAATAAAAAAAGCATTGCACAGTCACAGGTCAGTGTATCTACCCA
+CACAGAATATTCAACCACTGAAAAGAAATGACAAAAATACAGAGACATGCCAAACACCTT
+</pre>
+
+You can put that into online [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) to see what it is:
+![BLAST results](https://github.com/user-attachments/assets/11ebc286-cc07-4fa2-9088-5a6efe9ff5e1)
+
+That's all tumor suppressing genes in various fish, almost all distant relatives of *Enoplosus* showing how little diversity of fish is present in public genomic databases. The best hit, *Siniperca*, is a Chinese freshwater fish from a different family, but the same order.
+
+You can put this DNA into [Logan](https://logan-search.org/), which searches all 'raw' sequencing data and plots where the samples are from. This particular sequence hits nothing! No metagenomics project has sampled a similar fish (fish DNA makes up very little of metagenomics data, the chance to also hit this particular piece of DNA is very, very low).
+
+
