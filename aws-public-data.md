@@ -23,8 +23,8 @@ then several folders containing genome assembly and sequencing data:
 | assembly_oceangenomes_v1/evaluation/busco | Contains BUSCO genome completeness results |
 | assembly_oceangenomes_v1/evaluation/genomescope | Contains GenomeScope genome size estimate results | 
 | assembly_oceangenomes_v1/evaluation/{hap1,hap2} | Contains BUSCO results per haplotype | 
-| assembly_oceangenomes_v1/evaluation/merqury | Contains Mergury genome quality evaluation results |
-│ assembly_oceangenomes_v1/intermediates/ | Contains hifiasm assembled contigs and contig graphs for hap1 and hap2 | 
+| assembly_oceangenomes_v1/evaluation/merqury | Contains Merqury genome quality evaluation results |
+| assembly_oceangenomes_v1/intermediates/ | Contains hifiasm assembled contigs and contig graphs for hap1 and hap2 | 
 | genomic_data/ | contains raw reads of all data types |
 | genomic_data/illumina | raw Illumina paired ends reads, fastq.gz | 
 | gneomic_data/dovetail | raw HiC data in fastq.gz format |
