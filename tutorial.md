@@ -9,7 +9,7 @@ Here are several examples on what one can do with the genome assembly data.
 
 ## Raw reads
 
-The most common use case for raw reads is to assembly them into a genome assembly.
+The most common use case for raw reads is to assemble them into a genome assembly.
 
 ### Genome assembly
 
@@ -52,7 +52,7 @@ This will generate a BLAST reference database. Here's a way to query that:
 
 You should see some hits appear.
 
-Other taxonomic classifiers or sequence comparison tools can be used with this assembly, too - MMSeqs2 and Kraken2 are commonly used for this task.
+Other taxonomic classifiers or sequence comparison tools can be used with this assembly - MMSeqs2 and Kraken2 are commonly used for this task.
 
 ### Search for genes
 
