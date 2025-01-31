@@ -33,7 +33,7 @@ then several folders containing genome assembly and sequencing data:
 Example: Assembly fArrgeo1, *Arripis georgianus*
 
 ```
-/
+Arripis_georgianus/
 └── fArrGeo1
     ├── assembly_curated
     │   ├── fArrGeo1.hap1.cur.20230529.agp
