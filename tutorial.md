@@ -1,7 +1,7 @@
 This file describes several potential use cases for the data in the OceanOmics AWS Open Data account, ranging from assemblies to eDNA.
 
-- [Ocean Genomes - working with assemblies](#ocean-genomes-working-with-assemblies)
-- [eDNA - working with environmental DNA data](#eDNA-working-with-environmental-DNA-data)
+- [Ocean Genomes - working with assemblies](#ocean-genomes---working-with-assemblies)
+- [eDNA - working with environmental DNA data](#eDNA---working-with-environmental-DNA-data)
 
 # Ocean Genomes - working with assemblies
 
