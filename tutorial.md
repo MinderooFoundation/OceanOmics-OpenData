@@ -86,4 +86,29 @@ That's all tumor suppressing genes in various fish, almost all distant relatives
 
 You can put this DNA into [Logan](https://logan-search.org/), which searches all 'raw' sequencing data and plots where the samples are from. This particular sequence hits nothing! No metagenomics project has sampled a similar fish (fish DNA makes up very little of metagenomics data, the chance to also hit this particular piece of DNA is very, very low).
 
+# eDNA - working with environmental DNA data
 
+We can run similar analyses with the raw reads in the eDNA data. There are three types of data in the eDNA data: 12S metabarcoding data, which is a specific region of the 12S gene in the mitogenome, 16S metabarcoding, the same but for 16S, and shotgun metabarcoding, which is 'raw' sequencing data from everything found in a water sample.
+
+Let' pull out one of the 12S reads, the first read from V10_CKI_N_1_5_R1:
+
+<pre>
+@VH00640:1:AACCK23M5:1:1101:55591:1057 1:N:0:1
+GTCGGTAAAACTCGTGCCAGCCACCGCGGTTATACGAGAGGCCCAAGTCGATAGGCATACGGCGTAAAGAGTGGTTAAGGAACATTTACACTAGGGTCGAATATTTTCAAAGCCGTCATACGCCTATGAGAATGAGAAACTCA
++
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC;CC;CCCCCCCCC;CCCCCCCCCCCCCCCCCCCCCCC;CCCCCCCC-CCCCCCCCCCCCCCCCCCCCCCCCC;CCCC-CC;C-CCCCCC-CCCCCCCC-C-CCC-C-CCC;C;
+</pre>
+
+The second row is the DNA sequence. Let's BLAST that:
+
+![image](https://github.com/user-attachments/assets/c393cd2e-6ef7-4a68-833d-2c223a252724)
+
+The first hit is for *Plectrogenium kamoharai*, but only with an identity of 89%, too low for most researchers in this space. We prefer more than 97%. So this does look like some kind of fish, but we don't know which one. 
+
+Let's put this read into Logan as well:
+
+![image](https://github.com/user-attachments/assets/83438ce9-399d-41b6-90a3-e227b7552008)
+
+Interesting! Many hits, most of them decent. You can see all of those hits next to Australia - all of these hits are OceanOmics samples we have previously uploaded to SRA. The read we searched is within this dataset, too. Nobody else has detected this fish. You can see how little marine metagenomics data there is!
+
+There's an interesting hit next to the US, but that seems to be an error somewhere as the metadata itself indicates this to be a OceanOmics sample from Australia.
