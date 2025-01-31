@@ -112,3 +112,5 @@ Let's put this read into Logan as well:
 Interesting! Many hits, most of them decent. You can see all of those hits next to Australia - all of these hits are OceanOmics samples we have previously uploaded to SRA. The read we searched is within this dataset, too. Nobody else has detected this fish. You can see how little marine metagenomics data there is!
 
 There's an interesting hit next to the US, but that seems to be an error somewhere as the metadata itself indicates this to be a OceanOmics sample from Australia.
+
+At this point you would take these entire datasets and run them through an amplicon/metabarcoding analysis pipeline. OceanOmics has a pipeline, too: [OceanOmics-amplicon-nf](https://github.com/MinderooFoundation/OceanOmics-amplicon-nf/). These pipelines merge duplicated reads into amplicon sequence variants (ASVs), assign taxonomic labels, and tell you which species are present in entire sample.
