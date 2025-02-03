@@ -19,6 +19,10 @@ Here's a simple example to assemble the raw reads into a genome assembly using [
     
 This will generate a folder named `OG88_assembly/` and within that folder, `final_contigs.fa` will contain the genome assembly.
 
+OceanOmics also has a Nextflow pipeline for draft genome assemblies: [OceanOmics-OceanGenomes-draft-genomes](https://github.com/Computational-Biology-OceanOmics/OceanOmics-OceanGenomes-ref-genomes), as does nf-core with [genomeassembler](https://github.com/nf-core/genomeassembler/).
+
+The data also includes high quality HiFi and HiC data that allows for higher quality, almost-complete genome assemblies that require only some manual curation. The OceanOmics pipeline to assemble all of those data-types together is [https://github.com/Computational-Biology-OceanOmics/OceanOmics-OceanGenomes-ref-genomes](OceanOmics-OceanGenomes-ref-genomes), but again nf-core's [genomeassembler](https://github.com/nf-core/genomeassembler/) pipeline works with these data-types as well.
+
 ### Sourmash-based diversity studies
 
 You can add these reads as a reference to a sourmash database - that will let you search your metagenomics datasets while including the genome as a potential reference. You can answer questions like, 'does my environmental sample contain DNA from *Enoplosus armatus*?' See the [sourmash manual](https://sourmash.readthedocs.io/en/latest/sourmash-sketch.html) for more information.
@@ -52,7 +56,7 @@ This will generate a BLAST reference database. Here's a way to query that:
 
 You should see some hits appear.
 
-Other taxonomic classifiers or sequence comparison tools can be used with this assembly - MMSeqs2 and Kraken2 are commonly used for this task.
+Other taxonomic classifiers or sequence comparison tools can be used with this assembly - MMSeqs2 and Kraken2 are commonly used for this task. The nf-core pipeline [taxprofiler](https://nf-co.re/taxprofiler/) combines several taxonomic classification tools in one pipeline.
 
 ### Search for genes
 
