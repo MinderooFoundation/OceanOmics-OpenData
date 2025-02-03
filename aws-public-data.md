@@ -12,7 +12,7 @@ Data is stored in FASTA, BAM, and FASTQ format in the following buckets:
 
 The structure of the data follows the [GenomeArk structure](https://genomeark.s3.amazonaws.com/index.html). 
 
-One folder per species with the accepted Latin name,  
+One folder per species with the accepted scientific name,  
 this folder contains samples in the form of Tree of Life IDs (ToLID), 
 then several folders containing genome assembly and sequencing data:
 
@@ -27,7 +27,7 @@ then several folders containing genome assembly and sequencing data:
 | assembly_oceangenomes_v1/intermediates/ | Contains hifiasm assembled contigs and contig graphs for hap1 and hap2 | 
 | genomic_data/ | contains raw reads of all data types |
 | genomic_data/illumina | raw Illumina paired ends reads, fastq.gz | 
-| gneomic_data/dovetail | raw HiC data in fastq.gz format |
+| gneomic_data/hic | raw HiC data in fastq.gz format |
 | genomic_data/pacbio_hifi | raw PacBio HiFi reads in bam and fastq.ggz format |
 
 Example: Assembly fArrgeo1, *Arripis georgianus*
@@ -115,7 +115,7 @@ Arripis_georgianus/
     │       └── meryl
     │           └── fArrGeo1_v230525_meryldb.tar.gz
     └── genomic_data
-        ├── dovetail
+        ├── hic
         │   ├── OG95H_D_HICL_S4_L001_R1_001.fastq.gz
         │   ├── OG95H_D_HICL_S4_L001_R2_001.fastq.gz
         │   └── fArrGeo1_hic_files.md5
@@ -136,7 +136,7 @@ Arripis_georgianus/
 
 The OceanOmics eDNA data aims to learn how to use environmental DNA (eDNA) to assess ecosystem health. Its main product is metabarcoding raw reads and metagenomics raw reads.
 
-The data is structured by OceanOmics voyage, several FASTQ files per OceanOmics expedition (voyage). The S3 bucket contains one folder per voyage, with each voyage folder containing paired end reads of every sample of the voyage. Each voyage is split into several folders, one folder per chosen assay (12S, 16S, etc. pp.). Each assay contains one folder named `Unknown` which contains demultiplexed reads that could not be assigned to a known barcode-pair.
+The data is structured by OceanOmics project (often but not always a voyage), several FASTQ files per OceanOmics expedition (voyage). The S3 bucket contains one folder per project code, with each project folder containing paired end reads of every sample of the project. Each project is split into several folders, one folder per chosen assay (12S, 16S, etc. pp.). Each assay contains one folder named `Unknown` which contains demultiplexed reads that could not be assigned to a known barcode-pair.
 
 For example,
 
