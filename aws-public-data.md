@@ -45,7 +45,9 @@ Arripis_georgianus/
     │   ├── fArrGeo1.hap2.cur.20230529.fasta.gz
     │   ├── fArrGeo1.hap2.cur.20230529.gfastats.txt
     │   ├── fArrGeo1.hap2.cur.map.pretext
-    │   └── fArrGeo1.hap2.cur.pretext_snapshot.png
+    │   ├── fArrGeo1.hap2.cur.pretext_snapshot.png
+    │   ├── mitogenome
+    │   │   └──  fArrGeo1.20230529.mitohifi.fasta
     ├── assembly_oceangenomes_v1
     │   ├── evaluation
     │   │   ├── busco
