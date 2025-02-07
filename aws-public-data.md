@@ -18,6 +18,7 @@ then several folders containing genome assembly and sequencing data:
 
 | Folder name | Folder contents |
 | ------------- | ------------- | 
+| assembly_MT/ | Mitogenome assembly based on HiFi reads, contains rotated fasta and genbank with gene predictions based on [EMMA](https://github.com/ian-small/Emma) | 
 | assembly_curated/ | 'Final' genome assembly after manual curation using HiC contact matrices. Contains fasta.gz files of pseudo-chromosomes or scaffolds. | 
 | assembly_oceangenomes_v1 | contains evaluation data and pre-curation assembly steps | 
 | assembly_oceangenomes_v1/evaluation/busco | Contains BUSCO genome completeness results |
