@@ -35,6 +35,9 @@ Example: Assembly fArrgeo1, *Arripis georgianus*
 ```
 Arripis_georgianus/
 └── fArrGeo1
+    ├── assembly_MT
+    │   ├── fArrGeo1.20230529.mitohifi.fasta
+    |   └── fArrGeo1.20230529.mitohifi.gb
     ├── assembly_curated
     │   ├── fArrGeo1.hap1.cur.20230529.agp
     │   ├── fArrGeo1.hap1.cur.20230529.fasta.gz
@@ -45,9 +48,7 @@ Arripis_georgianus/
     │   ├── fArrGeo1.hap2.cur.20230529.fasta.gz
     │   ├── fArrGeo1.hap2.cur.20230529.gfastats.txt
     │   ├── fArrGeo1.hap2.cur.map.pretext
-    │   ├── fArrGeo1.hap2.cur.pretext_snapshot.png
-    │   ├── mitogenome
-    │   │   └──  fArrGeo1.20230529.mitohifi.fasta
+    │   └── fArrGeo1.hap2.cur.pretext_snapshot.png
     ├── assembly_oceangenomes_v1
     │   ├── evaluation
     │   │   ├── busco
