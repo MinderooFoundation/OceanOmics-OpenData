@@ -8,7 +8,15 @@ The OceanOmics Ocean Genomes data aims to sequence all marine vertebrates. Its m
 
 Data is stored in FASTA, BAM, and FASTQ format in the following buckets:
 
-(to fill once we have bucket names)
+    s3://minderoo-oceanomics/
+
+To list all species in the S3 bucket, run
+
+    aws s3 ls --no-sign-request s3://minderoo-oceanomics/species/
+
+To download a species' curated genome assembly, run 
+
+    aws s3 cp --no-sign-request s3://minderoo-oceanomics/species/Enoplosus_armatus/fEnoArm2/assembly_curated/ . --recursive
 
 The structure of the data follows the [GenomeArk structure](https://genomeark.s3.amazonaws.com/index.html). 
 
