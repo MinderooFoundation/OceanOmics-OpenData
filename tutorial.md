@@ -88,7 +88,7 @@ You can put that into online [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) t
 
 That's all tumor suppressing genes in various fish, almost all distant relatives of *Enoplosus* showing how little diversity of fish is present in public genomic databases. The best hit, *Siniperca*, is a Chinese freshwater fish from a different family, but the same order.
 
-You can put this DNA into [Logan](https://logan-search.org/), which searches all 'raw' sequencing data and plots where the samples are from. This particular sequence hits nothing! No metagenomics project has sampled a similar fish (fish DNA makes up very little of metagenomics data, the chance to also hit this particular piece of DNA is very, very low).
+You can put this DNA into [Logan](https://logan-search.org/), which searches all 'raw' sequencing data and plots where the samples are from. This particular sequence hits a single sample - it looks like we accidentally copy-pasted a [ultra-conserved element (UCE) from *E. armatus*](https://www.ncbi.nlm.nih.gov/sra/?term=SRR16897145), isn't that interesting! But no 'regular' metagenomics project has sampled a similar fish (fish DNA makes up very little of metagenomics data, the chance to also hit this particular piece of DNA is very, very low).
 
 # eDNA - working with environmental DNA data
 
